@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      section {
+        height: 100vh;
+        background: #333;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .result-box {
+        height: 300px;
+        width: 400px;
+        background: #fff;
+        color: #333;
+        border-radius: 8px;
+        padding: 2rem;
+        text-align: center;
+        border: 10px solid yellowgreen;
+      }
+      .result-box h1 {
+        font-size: 2rem;
+        margin-block: 2rem;
+      }
+
+      #next-btn {
+        padding: 5px 30px;
+        font-size: 1.4rem;
+        background: green;
+        color: white;
+        border: 2px solid green;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+      }
+      #next-btn:hover {
+        background: transparent;
+        border: 2px solid green;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="result-box">
+        <h1>Result : <span id="result">Winner</span></h1>
+        <h1>Score : <span id="score"> 1</span></h1>
+        <button id="next-btn">Next</button>
+      </div>
+    </section>
+  </body>
 </html>

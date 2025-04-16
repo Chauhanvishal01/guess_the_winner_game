@@ -20,6 +20,7 @@
 
       .nav-bar{
         background-color: chocolate;
+        color: wheat;
         height: 10vh;
         width: 100vw;
         display: flex;
@@ -30,7 +31,7 @@
         font-size: 3rem;
       }
       .main{
-        height: 90vh;
+        height: 50vh;
         width: 100vw;
         display: flex;
         align-items: center;
@@ -38,23 +39,47 @@
         
       }
       .description{
-        height: 90vh;
+        height: 50vh;
         width: 30vw;
         display: flex;
         align-items: center;
+        justify-content: center;
       }
       .text{
         font-size: 1.5rem;
-        line-height: 30px;
+        line-height: 40px;
         text-align: center;
+        margin-top: 10rem;
 
       }
       .high-score{
-        height: 90vh;
+        height: 50vh;
         width: 70vw;
-        text-align: end;
         display: flex;
         align-items: center;
+        justify-content: space-around;
+        font-size: 2rem;
+      }
+      #finall-score{
+        font-size: 10rem;
+        color: chocolate;
+      }
+      .button{
+        height: 40vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .start-btn{
+        padding: 20px;
+        font-size: 1.4rem;
+        border-radius: 20px;
+        border: none;
+        background-color: chocolate;
+        color: wheat;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -65,11 +90,14 @@
       </div>
       <div class="main">
       <div class="description">
-        <p class="text">The Guessing Game is a fun and interactive game where the player tries to guess a secret characters within a limited time of attempts. After each guess, the player receives scores to help narrow down their round choice.</p>
+        <p class="text">The Guessing Game <br>is a fun and interactive game <br>where the player tries to guess <br> a secret characters within a <br>limited time of attempts. <br> After each guess, <br> the player receives scores <br> to help narrow down <br> their Round .</p>
       </div>
       <div class="high-score">
-        <p>high score</p>
+        <p>High score <span id="finall-score">1500</span></p>
       </div>
+    </div>
+    <div class="button">
+      <button class="start-btn">Start Game !</button>
     </div>
 
     </div>

@@ -1,191 +1,197 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Home Page */
 .body {
-    background-color: white;
-    height: 100vh;
-    width: 100vw;
-    /* display: flex; */
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  /* display: flex; */
 }
 
 .nav-bar {
-    background-color: chocolate;
-    color: wheat;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: chocolate;
+  color: wheat;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-name {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .main {
-    height: 50vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
 }
 
 .description {
-    height: 50vh;
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 50vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text {
-    font-size: 1.5rem;
-    line-height: 40px;
-    text-align: center;
-    margin-top: 10rem;
+  font-size: 1.5rem;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 10rem;
 }
 
 .high-score {
-    height: 50vh;
-    width: 70vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 2rem;
+  height: 50vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
 }
 
 #finall-score {
-    font-size: 10rem;
-    color: chocolate;
+  font-size: 10rem;
+  color: chocolate;
 }
 
 .button {
-    height: 40vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .start-btn {
-    padding: 20px;
-    font-size: 1.4rem;
-    border-radius: 20px;
-    border: none;
-    background-color: chocolate;
-    color: wheat;
-    cursor: pointer;
-    text-decoration: none;
+  padding: 20px;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  border: none;
+  background-color: chocolate;
+  color: wheat;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-
-
+/* Game CSS */
 /* navbar */
 .navbar-game {
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: chocolate;
-    color: wheat;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+  color: wheat;
 }
 
 .name {
-    font-size: 2.5rem;
-    letter-spacing: 3px;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
 }
 
 /* body */
 .fight-div {
-    margin-top: 17vh;
-    height: 40vh;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
-    align-items: center;
+  margin-top: 17vh;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  align-items: center;
 }
 
 .opponent-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.opponent-div:hover {
+  transition: scale 0.1s ease-in;
+  scale: 1.1;
 }
 
 .opponent {
-    height: 50vh;
-    width: 40vh;
-    border: 1px solid black;
-    cursor: pointer;
+  height: 50vh;
+  width: 40vh;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .vs {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .next-div {
-    margin-top: 14vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #next-level-btn {
-    padding: 0.9rem 6rem;
-    color: wheat;
-    background: chocolate;
-    border: none;
-    font-size: 1.3rem;
-    cursor: pointer;
-    text-decoration: none;
+  padding: 0.9rem 6rem;
+  color: wheat;
+  background: chocolate;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+#next-level-btn:hover {
+  transition: scale 0.1s ease-in;
+  scale: 1.1;
 }
 
 /* Result Page */
 
-
 section {
-    height: 100vh;
-    background: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .result-box {
-    height: 300px;
-    width: 400px;
-    background: #fff;
-    color: #333;
-    border-radius: 8px;
-    padding: 2rem;
-    text-align: center;
-    border: 10px solid yellowgreen;
+  height: 300px;
+  width: 400px;
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  border: 10px solid yellowgreen;
 }
 
 .result-box h1 {
-    font-size: 2rem;
-    margin-block: 2rem;
+  font-size: 2rem;
+  margin-block: 2rem;
 }
 
 #next-btn {
-    padding: 5px 30px;
-    font-size: 1.4rem;
-    background: green;
-    color: white;
-    border: 2px solid green;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    text-decoration: none;
+  padding: 5px 30px;
+  font-size: 1.4rem;
+  background: green;
+  color: white;
+  border: 2px solid green;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
 }
 
 #next-btn:hover {
-    background: transparent;
-    border: 2px solid green;
-    color: black;
+  background: transparent;
+  border: 2px solid green;
+  color: black;
 }

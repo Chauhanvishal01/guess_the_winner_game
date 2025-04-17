@@ -4,74 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess the Winner</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-      *{
-        padding: 0%;
-        margin: 0%;
-      }
-      .body{
-        background-color: white;
-        height:100vh;
-        width:100vw;
-        /* display: flex; */
-
-      }
-
-      .nav-bar{
-        background-color: chocolate;
-        height: 10vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .game-name{
-        font-size: 3rem;
-      }
-      .main{
-        height: 90vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        
-        
-      }
-      .description{
-        height: 90vh;
-        width: 30vw;
-        display: flex;
-        align-items: center;
-      }
-      .text{
-        font-size: 1.5rem;
-        line-height: 30px;
-        text-align: center;
-
-      }
-      .high-score{
-        height: 90vh;
-        width: 70vw;
-        text-align: end;
-        display: flex;
-        align-items: center;
-      }
+     
     </style>
   </head>
   <body>
     <div class="body">
       <div class="nav-bar">
-        <p class="game-name">Guessing Game </p>
+        <p class="game-name">Guessing Game</p>
       </div>
       <div class="main">
-      <div class="description">
-        <p class="text">The Guessing Game is a fun and interactive game where the player tries to guess a secret characters within a limited time of attempts. After each guess, the player receives scores to help narrow down their round choice.</p>
+        <div class="description">
+          <p class="text">
+            The Guessing Game <br />is a fun and interactive game <br />where
+            the player tries to guess <br />
+            a secret characters within a <br />limited time of attempts. <br />
+            After each guess, <br />
+            the player receives scores <br />
+            to help narrow down <br />
+            their Round .
+          </p>
+        </div>
+        <div class="high-score">
+          <p>High score <span id="finall-score">1500</span></p>
+        </div>
       </div>
-      <div class="high-score">
-        <p>high score</p>
+      <div class="button">
+        <a class="start-btn" href="./pages/game.html">Start Game </a>
       </div>
-    </div>
-
     </div>
   </body>
 </html>

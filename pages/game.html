@@ -5,66 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess The Game</title>
   </head>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-    }
-    /* navbar */
-    .navbar-game {
-      height: 12vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: chocolate;
-      color: wheat;
-    }
-    .name {
-      font-size: 2.5rem;
-      letter-spacing: 3px;
-    }
-    /* body */
-    .fight-div {
-      margin-top: 17vh;
-      height: 40vh;
-      display: flex;
-      justify-content: space-evenly;
-      padding: 1rem;
-      align-items: center;
-    }
-    .opponent-div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.3rem;
-    }
-    .opponent {
-      height: 50vh;
-      width: 40vh;
-      border: 1px solid black;
-      cursor: pointer;
-    }
-    .vs {
-      font-size: 2rem;
-    }
-    .next-div {
-      margin-top: 14vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #next-level-btn {
-      padding: 0.9rem 6rem;
-      color: wheat;
-      background: chocolate;
-      border: none;
-      font-size: 1.3rem;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="../style.css" />
   <body>
     <header>
       <div class="navbar-game">
@@ -72,13 +13,13 @@
       </div>
     </header>
     <main>
-      <div class="body">
+      <div class="">
         <div class="fight-div">
           <div class="opponent-div" id="opponent_1">
             <img
               class="opponent"
               id="opponent_1"
-              src="/guess_the_winner_game/assets/one-punch-man.jpg"
+              src="../assets/one-punch-man.jpg"
               alt="opponent_1"
             />
             <p>One Punch Man</p>
@@ -89,7 +30,7 @@
           <div class="opponent-div" id="opponent_2">
             <img
               class="opponent"
-              src="/guess_the_winner_game/assets/flaming-onepiece.jpg"
+              src="../assets/flaming-onepiece.jpg"
               alt="opponent_2"
             />
             <p>Flamingo - One Piece</p>
@@ -97,7 +38,7 @@
         </div>
       </div>
       <div class="next-div">
-        <button id="next-level-btn">Next</button>
+        <a id="next-level-btn" href="./result.html">Next</a>
       </div>
     </main>
   </body>
